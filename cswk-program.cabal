@@ -1,0 +1,44 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           cswk-program
+version:        0.1.0.0
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Logic
+      Minesweeper
+      Rendering
+  other-modules:
+      Paths_cswk_program
+  hs-source-dirs:
+      src
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , gloss
+    , gloss-juicy
+    , random
+  default-language: Haskell2010
+
+executable cswk-program-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_cswk_program
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , cswk-program
+    , gloss
+    , gloss-juicy
+    , random
+  default-language: Haskell2010
