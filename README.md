@@ -1,3 +1,4 @@
-# cswk-program
+# haskell-minesweeper
 
-This is the skeleton code for the second coursework in the 2022 iteration of CS141 Functional Programming at the University of Warwick.
+code for a quick and easy minesweeper clone in haskell
+uses gloss for graphics
